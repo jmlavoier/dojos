@@ -1,14 +1,3 @@
-# Dojo
-
-## Objetivo
-Compartilhar conhecimento de maneira divertida
-
-## Como? 
-Com live coding da galera geral
-
-## 
-
-
 # Reaproveitamento de Componentes
 
 
