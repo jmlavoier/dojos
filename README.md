@@ -3,7 +3,7 @@
 > Dojo, (pronuncia-se Dojô) é uma palavra de origem japonesa e significa “local de treinamento”. Portanto, o Coding Dojo nada mais é que do um “local de treinamento de código”, ou “local de treinamento de programação”. [devmedia.com.br/o-que-e-o-coding-dojo/30517](https://www.devmedia.com.br/o-que-e-o-coding-dojo/30517)
 
 > Um dojo é uma sala de treinamento de artes marciais japonesas, e um kata é uma sequência de movimentos detalhada e predeterminada para lutar contra um oponente imaginário. A rotina é repetida com perfeição para que o lutador possa relembrar padrões por instinto em uma batalha real. 
-Como em um dojo real, o Code Dojo é uma técnica de treinamento em que os engenheiros resolvem uma tarefa de programação várias vezes seguidas - cada vez melhor que a anterior. [inside.getyourguide.com/blog/coding-dojo-teams](https://inside.getyourguide.com/blog/coding-dojo-teams)
+Como em um dojo real, o Code Dojo é uma técnica de treinamento em que os engenheiros resolvem uma tarefa de programação várias vezes seguidas - cada vez melhor que a anterior. [inside.getyourguide.com/blog/coding-dojo-teams](https://inside.getyourguide.com/blog/coding-dojo-teams).
 
 
 ## Objetivo
