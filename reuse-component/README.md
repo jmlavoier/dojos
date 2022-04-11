@@ -7,8 +7,10 @@ Considere que os componentes reutilizáveis serão utilizado em outra tela para 
 ## Detalhes
 
 - Universos são: Pokémon, Star Wars, Harry Potter...
-- Já foi construído alguns *styled-components* em `src/components/styled.ts`, para não precisar se preocupar com estilização, talvez alguns ajustes. 
-- Os componentes `PokemonItem` e `PokemonList`, são exemplos de componentes não reaproveitáveis, a ideia é refatorálos para sejam. 
+- Já foi construído alguns *styled-components* em `src/components/styled.ts`, para não precisar se preocupar com estilização, talvez seja necesssário alguns ajustes.
+- Os dados ficam em `src/data`.
+- As telas já foram definidas e organizadas no diretório `src/screens`.
+- Os componentes `PokemonItem` e `PokemonList`, são exemplos de componentes não reaproveitáveis, a ideia é refatorá-los para sejam. 
 - Faça testes dos componentes criados utilizando *jest* e *react-testing-library* como no exemplo do `PokemonItem.test`.
 - Siga o [protótipo](https://www.figma.com/file/SU0KZXi0HTsmYWnFIT46iO/Dojo's-Prototypes?node-id=0%3A1) do desafio.
 - As imagens dos universos ficam em `assets/images` e podem ser importadas.
