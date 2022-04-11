@@ -1,10 +1,16 @@
 import React from 'react';
-import { Content } from '../components/styled';
+import { Content, Img, Body } from '../components/styled';
+
+import starwars from '../assets/images/starwars.png';
+import pokemon from '../assets/images/pokemon.png';
 
 function Home() {
   return (
     <Content>
-      Home
+      <Body>
+        <Img src={starwars} />
+        <Img src={pokemon} />
+      </Body>
     </Content>
   );
 }
