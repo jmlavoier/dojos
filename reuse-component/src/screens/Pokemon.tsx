@@ -1,26 +1,12 @@
 import React from 'react';
-import { Content, Button, Text, Body } from '../components/styled';
+import { Content, Text, Body } from '../components/styled';
 
-import List from '../components/List';
-import Item from '../components/Item';
-
-
-import pokemons from '../data/pokemons.json';
-const pokemonsNames = pokemons.map((p) => p.name.english)
+import PokemonList from '../components/PokemonList';
 
 function Pokemon() {
   return (
     <Content>
-      <List
-        items={pokemonsNames}
-        renderItem={(item) => (
-          <Item>
-            <Button>
-              {item}
-            </Button>
-          </Item>
-        )}
-      />
+      <PokemonList />
       <Body>
         <Text>Escolha 1 item da lista para visualizar</Text>
       </Body>

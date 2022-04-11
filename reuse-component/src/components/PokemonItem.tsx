@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { IPokemon } from '../types';
-import { Item } from './styled';
+import { Item, Button } from './styled';
 
 interface Props {
   item: IPokemon
@@ -9,7 +9,7 @@ interface Props {
 
 const PokemonItem = ({ item }: Props) => (
   <Item>
-    {item.name.english}
+    <Button>{item.name.english}</Button>
   </Item>
 );
 
