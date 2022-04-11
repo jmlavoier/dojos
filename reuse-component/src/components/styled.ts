@@ -57,3 +57,10 @@ export const Body = styled.div`
   justify-content: center;
   flex-grow: 1;
 `
+
+export const Img = styled.img.attrs((props) => ({
+  ...props,
+  alt: "logo",
+}))`
+  height: 100px;
+`
