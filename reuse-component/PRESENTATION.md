@@ -1,6 +1,9 @@
+---
+marp: true
+---
 # Reaproveitamento de Componentes
 
-https://www.figma.com/file/SU0KZXi0HTsmYWnFIT46iO/Dojo's-Prototypes?node-id=0%3A1
+---
 ## Responsabilidade
 
 O que é responsabilidade? E como econtrar uma responsabilidade para ele?
@@ -14,8 +17,9 @@ O que é responsabilidade? E como econtrar uma responsabilidade para ele?
 )
 ```
 
-Quando recebemos uma faeture para ser desenvolvida, temos a tendencia de nos enviesar através de todo o fluxo desta feature. 
+Quando recebemos uma feature para ser desenvolvida, temos a tendencia de nos enviesar através de todo o fluxo desta feature. 
 
+---
 
 ## Propriedades (data, events)
 
@@ -32,7 +36,7 @@ Já parou pra pensar como você gostaria de utilizar este componente onde quer q
   />
 )
 ```
-
+---
 
 ## Prop de callback de eventos
 
@@ -56,8 +60,10 @@ const Select = ({ items, onSelect }) => {
     )
   }
 ```
+---
 
-Um componente de listagem não teria somente a responsabilidade de listar?
+
+### Um componente de listagem não teria somente a responsabilidade de listar?
 
 ```jsx
 (
@@ -72,15 +78,19 @@ Um componente de listagem não teria somente a responsabilidade de listar?
 
 Podemos sempre encontrar uma responsabilidade única para um componente.
 
+---
+
 ## Quando estiver criando um estado dentro de um component sempre se pergunte
 Este componente realmente precisa de um estado? Faça esse exercício
+
+---
 
 # Patterns
 
 High Order Component caiu em desuso com a chegada de custom hooks, 
-pois essa estratégia era muito utilzada para reaproveitamento de regras de negocios. Hoje com a criação de 
-`custom hooks` você consegue fazer isso. 
+pois essa estratégia era muito utilzada para reaproveitamento de regras de negocios. Hoje com a criação de `custom hooks` você consegue fazer isso. 
 
+---
 ## HOC
 
 ```jsx
@@ -99,6 +109,10 @@ pois essa estratégia era muito utilzada para reaproveitamento de regras de nego
 
 Mas existem casos que podem fazer sentido utilizar HOCs, por exemplo quando você quer deixar a regra de negócio mais desacoplada do ciclo de vida do componente.
 
+
+---
+## Listagem (HoC)
+
 ```jsx
 //ShowList
 const ShowList = ({ data }) => (
@@ -112,6 +126,8 @@ const ShowList = ({ data }) => (
 export const PockemonShowList = pockemonConnect(ShowList)
 ```
 
+---
+## Listagem (uso)
 
 ```jsx
 //Page
@@ -124,10 +140,10 @@ const Page = () => (
   </>
 )
 ```
-
+---
 ## Render props
 
-Como visto o componente List acima
+Como visto o componente List acima, implementação seria algo assim:
 
 ```jsx
 const List = ({ items, renderItem }) => (
@@ -136,11 +152,16 @@ const List = ({ items, renderItem }) => (
   </ul>
 )
 ```
+---
 
 ## Children as function
 
 Children as function, raramente é usado, pois sua aplicação é muito específica. Um exemplo que existe é o `Consumer` do context API do React.
 Em algum momento, pode ser que você precise organizar um componente que tenha a responsabilidade de gerenciar um efeito colateral? Não sei. rsrs
+
+---
+
+## Children as function (code)
 
 ```jsx
 const ScrollPosition = ({ children }) => {
@@ -166,7 +187,9 @@ const ScrollPosition = ({ children }) => {
   )
 }
 ```
+--- 
 
+## Children as function (uso)
 ```jsx
 const Wrapper = () => (
   <ScrollPosition>
@@ -174,12 +197,12 @@ const Wrapper = () => (
   </ScrollPosition>
 )
 ```
-
-## React hooks
+---
+## React hooks (custom hook)
 
 Na maioria das vezes react hooks vai solucionar o problema. 
 
-```jsx
+```js
 const useScrollPosition = ({ children }) => {
   const [position, setPosition] = useState(0);
 
@@ -199,6 +222,8 @@ const useScrollPosition = ({ children }) => {
  return position;
 }
 ```
+---
+## React hooks (uso)
 
 ```jsx
 const Wrapper = () => {
@@ -209,10 +234,14 @@ const Wrapper = () => {
   );
 }
 ```
-
+---
 ## Subcomponents
 
 Com a intenção de separarmos bem as responsabilidades dos componentes, ao mesmo tempo evitando criar muitas propriedades para customização, quando possuimos variações de um componente mais complexo, ou quando os componentes são obrigatórios serem utilizado juntos.
+
+--- 
+
+## Subcomponents 
 
 ```jsx
 //Link
@@ -235,7 +264,9 @@ export default {
   Anchor,
 }
 ```
+--- 
 
+## Subcomponents (uso)
 ```jsx
 //Link
 import Link from "./Link";
