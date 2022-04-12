@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
+import useSound from 'use-sound';
+
+const applause = require('../sounds/applause.mp3');
+
 const MINUTES = 5;
 const ONE_SEC = 1000;
 const ONE_MIN = 60;
 const AUDIENCE = [
-  'João Milton',
-  'Tamara',
-  'Agnaldo'
+  'pilot',
+  'copilot',
+  'audience1',
+  'audience2',
+  'audience3',
 ]
 
 type Time = number;
@@ -68,13 +74,15 @@ const Wrapper = styled.div`
 const Card = () => {
   const { pilot, copilot, next } = useDojo(AUDIENCE);
   const { min, sec, start } = useCronometer();
+  const [ play ] = useSound(applause);
 
   useEffect(() => {
     if (min === 0 && sec === 0) {
+      play();
       start();
       next();
     }
-  }, [min, sec, next, start]);
+  }, [min, sec, next, start, play]);
 
   return (
     <Wrapper>
