@@ -9,7 +9,7 @@ Como em um dojo real, o Code Dojo é uma técnica de treinamento em que os engen
 ## Objetivo
   - Compartilhar conhecimento.
   - Provocar o senso crítico para a tomada de decisões no dia-a-dia da programação.
-  - Dispertar interesse sobre diversos assuntos agsnosticos de tecnologia. 
+  - Ir além da teoria.
 
 ## De maneira
   - Colaborativa
