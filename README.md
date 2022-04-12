@@ -1,3 +1,12 @@
+<style>
+  img[alt=externallink] { width: 14px; }
+
+  easy { color: green }
+  normal { color: blue }
+  hard { color: red }
+  challenging { color: purple }
+</style>
+
 # Dojos
 
 > Dojo, (pronuncia-se Dojô) é uma palavra de origem japonesa e significa “local de treinamento”. Portanto, o Coding Dojo nada mais é que do um “local de treinamento de código”, ou “local de treinamento de programação”. [devmedia.com.br/o-que-e-o-coding-dojo/30517](https://www.devmedia.com.br/o-que-e-o-coding-dojo/30517)
@@ -38,5 +47,12 @@ _"A teoria sem a prática vira "verbalismo", assim como a prática sem teoria vi
 
 [https://codingdojo.org/RandoriKata/](https://codingdojo.org/RandoriKata/)
 
-## Dojo organizer
+
+# Projetos prontos
+| Katas (desafios)                                                                                                                      | Stack                          | Nível  | 
+|---------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|--------|
+| [Reaproveitamento de Componentes ![externallink](./external-link.svg)](https://github.com/jmlavoier/dojos/tree/main/reuse-component)  | React+, styled-components  | <easy>Fácil</easy>  |
+|                                                                                                                                       |                                |        |
+
+## Contribuição
   - João Lavoier
