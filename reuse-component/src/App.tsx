@@ -6,6 +6,7 @@ import { Header } from './components/styled';
 import Home from './screens/Home';
 import Pokemon from './screens/Pokemon';
 import StarWars from './screens/StarWars';
+import Timer from './dojo/Timer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header>
         Dojo Sobre Reaproveitamento
       </Header>
+      <Timer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pokemon" element={<Pokemon />} />
