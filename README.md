@@ -49,10 +49,10 @@ _"A teoria sem a prática vira "verbalismo", assim como a prática sem teoria vi
 
 
 # Projetos prontos
-| Katas (desafios)                                                                                                                      | Stack                          | Nível  | 
-|---------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|--------|
-| [Reaproveitamento de Componentes ![externallink](./external-link.svg)](https://github.com/jmlavoier/dojos/tree/main/reuse-component)  | React+, styled-components  | <easy>Fácil</easy>  |
-|                                                                                                                                       |                                |        |
+| Katas (desafios)                                                                                                                      | Stack                          | Nível               | 
+|---------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|---------------------|
+| [Reaproveitamento de Componentes ![externallink](./external-link.svg)](https://github.com/jmlavoier/dojos/tree/main/reuse-component)  | React+, styled-components      | <easy>Fácil</easy>  |
+|                                                                                                                                       |                                |                     |
 
 ## Contribuição
   - João Lavoier
