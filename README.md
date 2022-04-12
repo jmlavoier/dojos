@@ -39,7 +39,8 @@ _"A teoria sem a prática vira "verbalismo", assim como a prática sem teoria vi
 [https://codingdojo.org/RandoriKata/](https://codingdojo.org/RandoriKata/)
 
 
-# Projetos prontos
+## Projetos prontos
+
 | Katas (desafios)                                                                                                                            | Stack                          | Nível     | 
 |---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|---------- |
 | [Reaproveitamento de Componentes ![externallink](https://github.com/jmlavoier/dojos/blob/main/external-link.png)](https://github.com/jmlavoier/dojos/tree/main/reuse-component)        | React+, styled-components      | Fácil     |
